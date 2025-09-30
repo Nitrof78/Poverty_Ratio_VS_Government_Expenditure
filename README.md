@@ -1,5 +1,6 @@
 # Poverty_Ratio_VS_Government_Expenditure
-Through this project we aim at studying the link between several major government expenditures and poverty level in a country. To do so, we'll gather the following World Development Indicators coming from the World Bank Databank Website :
+Through this project we aim at studying the link between several major government expenditures and poverty level in a country. 
+To do so, we'll gather the following World Development Indicators coming from the World Bank Databank Website :
 - Current health expenditure (% of GDP)    
 - Domestic general government health expenditure (% of GDP)  
 - Government expenditure on education, total (% of GDP)    
@@ -7,6 +8,11 @@ Through this project we aim at studying the link between several major governmen
 - Research and development expenditure (% of GDP)   
 - Poverty headcount ratio at societal poverty line (% of population)
 All data has been extracted on period of 10 years, from 2015 to 2024.
+
+## Files available
+`Poverty VS Government Expenditure_2015_2024_Data.csv` : CSV file containing indicators mentionned above, detailed by country and year  
+`Poverty VS Government Expenditure.ipynb` : code for the project in a Jupyter Notebook  
+`README.md` : Instructions to consult before starting project
   
 ## Installation
 Please clone the GitHub repository before using it and feel free to do any improvment once done.  
@@ -46,6 +52,9 @@ df = pd.read_csv('YourFileNameHere.csv')
 df.head()
 ```
 Please note that, if you modified the indicators taken into account, several steps of data cleaning will also have to be updated.
+
+## Current results
+In its present configuration, the anlysis shows strongest (negative) correlation of poverty ratio with Education and Health Expenditure, without solving the question about wether Education and Health lead to less poverty, or if less poverty gives more latitude for Health and Education Expenditures. Some exploratory leads would be to study results by region or similar countries and use historical data to understand the link between the indicators and poverty ratio.
 
 ## License Type
 All indicators are coming from one database, with the following license :  
