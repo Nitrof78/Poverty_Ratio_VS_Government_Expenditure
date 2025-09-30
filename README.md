@@ -47,7 +47,7 @@ If you wish to change datasource, adding other indicators, changing time period,
 5) Store the Data CSV file in your repository and name it in a clear way
 6) Modify step 2 of the Jupiter Notebook to take into account the name of your datasource
 ```ruby
-#We load data from the csv file.  
+# We load data from the csv file.  
 df = pd.read_csv('YourFileNameHere.csv')
 df.head()
 ```
