@@ -10,8 +10,9 @@ To do so, we'll gather the following World Development Indicators coming from th
 All data has been extracted on period of 10 years, from 2015 to 2024.
 
 ## Files available
-`Poverty VS Government Expenditure_2015_2024_Data.csv` : CSV file containing indicators mentionned above, detailed by country and year  
+`Poverty VS Government Expenditure_2014_2023_Data.csv` : CSV file containing indicators mentionned above, detailed by country and year  
 `Poverty VS Government Expenditure.ipynb` : code for the project in a Jupyter Notebook  
+`Test_Dataset_Poverty_Ratio_VS_Government_Expenditure.csv` : dummy dataset to test different scenarios
 `README.md` : Instructions to consult before starting project
   
 ## Installation
@@ -52,6 +53,8 @@ df = pd.read_csv('YourFileNameHere.csv')
 df.head()
 ```
 Please note that, if you modified the indicators taken into account, several steps of data cleaning will also have to be updated.
+## Test file update
+You can add or delete any scenario you want. Just be sure to keep same column names. In case you've integrated new indicators, you'll have to modify this file accordingly and update the code. 
 
 ## Current results
 In its present configuration, the anlysis shows strongest (negative) correlation of poverty ratio with Education and Health Expenditure, without solving the question about wether Education and Health lead to less poverty, or if less poverty gives more latitude for Health and Education Expenditures. Some exploratory leads would be to study results by region or similar countries and use historical data to understand the link between the indicators and poverty ratio.
